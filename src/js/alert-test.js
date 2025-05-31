@@ -1,3 +1,3 @@
 export function alertTest() {
-    alert("Imported Alert!!!")
+    console.log("Imported Alert!!!");
 }

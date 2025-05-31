@@ -6,7 +6,7 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  // site: "https://zmilla93.github.io",
-  output: "static",
+  site: "https://zmilla93.github.io",
   base: "/astro-lab/",
+  output: "static",
 });

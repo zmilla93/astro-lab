@@ -1,13 +1,13 @@
 ---
 import PageWrapper from "../layouts/PageWrapper.astro";
-import { alertTest } from "../js/alert-test.js";
-
-alertTest();
 ---
 
 <PageWrapper title="Test Page">
     This is a test page!!!
     <script>
+        import { alertTest } from "../js/alert-test";
+
         alert("Test!");
+        alertTest();
     </script>
 </PageWrapper>
