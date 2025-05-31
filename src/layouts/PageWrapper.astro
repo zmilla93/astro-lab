@@ -1,0 +1,23 @@
+---
+import "../styles/app.css";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title && title}</title>
+    </head>
+    <body>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="/test">Test</a>
+        <a href="/react">React</a>
+        <h1>{title && title}</h1>
+        <slot />
+    </body>
+</html>
